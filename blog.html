@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог - ТурАгентство</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="position-fixed top-0 start-0 w-100 h-100 "
+     style="background: rgba(255, 255, 255, 0.6); z-index: -9;">
+    </div>
+      <div class="position-fixed top-0 start-0 w-100 h-100 bg-cover " 
+     style="background-image: url(/images/Изображение\ WhatsApp\ 2025-11-16\ в\ 14.51.25_95014b1d.jpg); background-position: center; z-index: -10;">
+</div>
+    <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-color: #3BB0D7;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-airplane"></i> ТурАгентство</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tours.html">Туры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Направления</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Блог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-primary text-white py-5 mt-5">
+        <div class="container py-4">
+            <h1 class="display-4 fw-bold">Блог о путешествиях</h1>
+            <p class="lead">Полезные советы, интересные истории и новости из мира туризма</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="py-5">
+        <div class="container">
+            <div id="blogContainer" class="row g-4">
+                <!-- Blog posts will be inserted here by JavaScript -->
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Page navigation" class="mt-5">
+                <ul class="pagination justify-content-center" id="blogPagination">
+                    <!-- Pagination will be inserted here by JavaScript -->
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Blog Post Modal -->
+    <div class="modal fade" id="blogPostModal" tabindex="-1" aria-labelledby="blogPostModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="blogPostModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <span id="blogPostBadge" class="badge mb-2"></span>
+                        <p class="text-muted small mb-3" id="blogPostDate"></p>
+                        <img id="blogPostImage" src="" alt="" class="img-fluid rounded mb-3" style="max-height: 400px; object-fit: cover;">
+                    </div>
+                    <div id="blogPostContent"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">Подпишитесь на рассылку</h2>
+                    <p class="text-muted mb-4">Получайте полезные статьи о путешествиях и специальные предложения</p>
+                    <div class="input-group input-group-lg">
+                        <input type="email" class="form-control" id="newsletterEmail" placeholder="Ваш email" required>
+                        <button class="btn btn-primary" type="button" id="newsletterBtn">Подписаться</button>
+                    </div>
+                    <div class="invalid-feedback d-block" id="newsletterFeedback"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <a class="fw-bold mb-3 fw-bold" href="https://vt.tiktok.com/ZSyEQrEjh/"><i class="bi bi-airplane"></i> ТурАгентство</a>
+                    <p >Ваш надежный партнер в мире путешествий. Более 20 направлений по всему миру.</p>
+                    <div class="mt-3">
+                        <a href="https://www.tiktok.com/@csp.atb/video/7515898883994619167?is_from_webapp=1&sender_device=pc" class="text-white text-decoration-none me-3">Facebook</a>
+                        <a href="https://www.tiktok.com/@reza.editxz/video/7568436202098003218?is_from_webapp=1&sender_device=pc" class="text-white text-decoration-none me-3">Instagram</a>
+                        <a href="https://www.tiktok.com/@romaya_edit/video/7571822941294382354?is_from_webapp=1&sender_device=pc" class="text-white text-decoration-none">Twitter</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Быстрые ссылки</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Главная</a></li>
+                        <li class="mb-2"><a href="tours.html" class="text-white text-decoration-none">Все туры</a></li>
+                        <li class="mb-2"><a href="destinations.html" class="text-white text-decoration-none">Направления</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Контакты</h5>
+                    <p ><i class="bi bi-telephone-fill me-2"></i>+7 7477930944</p>
+                    <p ><i class="bi bi-envelope-fill me-2"></i>info@turagentstvo.ru</p>
+                    <p ><i class="bi bi-geo-alt-fill me-2"></i>г. Алматы Жубанова 7</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">&copy; 2024 ТурАгентство. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="contact.html" class="text-white text-decoration-none me-3">Контакты</a>
+                    <a href="about.html" class="text-white text-decoration-none">О нас</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Blog posts data
+        const blogPosts = [
+            {
+                id: 1,
+                title: '10 советов для путешественников',
+                image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop',
+                badge: 'Советы',
+                badgeClass: 'bg-primary',
+                date: '15 января 2024',
+                shortText: 'Как правильно подготовиться к поездке, что взять с собой и как сэкономить на путешествии.',
+                fullText: '<p>Путешествия - это одно из самых увлекательных занятий в жизни. Но чтобы поездка прошла гладко, нужно тщательно подготовиться. Вот 10 советов, которые помогут вам сделать ваше путешествие незабываемым:</p><ol><li><strong>Заблаговременное планирование</strong> - начните планировать поездку за несколько месяцев до отъезда. Это поможет сэкономить деньги на билетах и отелях.</li><li><strong>Список необходимых вещей</strong> - составьте список вещей, которые нужно взять с собой. Не забудьте важные документы, зарядные устройства и аптечку.</li><li><strong>Страховка</strong> - обязательно оформите туристическую страховку. Это защитит вас от непредвиденных расходов.</li><li><strong>Изучите культуру</strong> - перед поездкой узнайте о местных обычаях и традициях страны, которую вы посещаете.</li><li><strong>Бюджет</strong> - рассчитайте бюджет поездки заранее и заложите резерв на непредвиденные расходы.</li><li><strong>Бронирование</strong> - бронируйте отели и билеты заранее, чтобы получить лучшие цены.</li><li><strong>Документы</strong> - сделайте копии важных документов и храните их отдельно от оригиналов.</li><li><strong>Электронные устройства</strong> - возьмите с собой универсальные адаптеры для зарядки устройств.</li><li><strong>Местная валюта</strong> - обменивайте валюту в банках или используйте карты с низкой комиссией.</li><li><strong>Отдых</strong> - не забывайте отдыхать во время путешествия. Не пытайтесь увидеть все за один день.</li></ol><p>Следуя этим советам, вы сможете сделать свое путешествие более комфортным и безопасным. Удачи в ваших приключениях!</p>',
+                buttonClass: 'btn-primary'
+            },
+            {
+                id: 2,
+                title: 'Лучшие пляжи Мальдив',
+                image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&h=400&fit=crop',
+                badge: 'Направления',
+                badgeClass: 'bg-success',
+                date: '12 января 2024',
+                shortText: 'Обзор самых красивых и уединенных пляжей Мальдивских островов для идеального отдыха.',
+                fullText: '<p>Мальдивы - это настоящий рай на земле с белоснежными пляжами и кристально чистой водой. Вот лучшие пляжи, которые стоит посетить:</p><h6>1. Пляж на острове Маафуши</h6><p>Один из самых популярных пляжей с мягким белым песком и лазурной водой. Идеально подходит для снорклинга и дайвинга.</p><h6>2. Пляж на острове Фуладу</h6><p>Уединенный пляж с нетронутой природой. Здесь вы сможете насладиться тишиной и покоем.</p><h6>3. Пляж на острове Вааду</h6><p>Известен своими коралловыми рифами и богатым подводным миром. Отличное место для любителей морских обитателей.</p><h6>4. Пляж на острове Хулхумале</h6><p>Широкий песчаный пляж с развитой инфраструктурой. Здесь есть все для комфортного отдыха.</p><h6>5. Пляж на острове Бияду</h6><p>Небольшой уютный пляж с пальмами и тихой атмосферой. Идеально для романтического отдыха.</p><p>Каждый из этих пляжей предлагает уникальный опыт и незабываемые впечатления. Выберите тот, который больше всего подходит вашему стилю отдыха!</p>',
+                buttonClass: 'btn-success'
+            },
+            {
+                id: 3,
+                title: 'Что попробовать в Тайланде',
+                image: 'https://images.unsplash.com/photo-1559314809-0d155014e29e?w=600&h=400&fit=crop',
+                badge: 'Кухня',
+                badgeClass: 'bg-warning',
+                date: '10 января 2024',
+                shortText: 'Топ-10 блюд тайской кухни, которые обязательно нужно попробовать во время поездки.',
+                fullText: '<p>Тайская кухня славится своими яркими вкусами и ароматами. Вот блюда, которые обязательно нужно попробовать:</p><ol><li><strong>Том Ям</strong> - острый и кислый суп с креветками или курицей. Настоящая классика тайской кухни.</li><li><strong>Пад Тай</strong> - жареная лапша с яйцом, тофу и креветками. Одно из самых популярных блюд.</li><li><strong>Грин Карри</strong> - зеленое карри с кокосовым молоком. Ароматное и пикантное блюдо.</li><li><strong>Сом Там</strong> - салат из зеленой папайи с перцем чили и арахисом. Освежающий и острый.</li><li><strong>Манго Стики Райс</strong> - сладкий рис с манго и кокосовым молоком. Десерт, который нельзя пропустить.</li><li><strong>Том Кха Гай</strong> - кокосовый суп с курицей и лемонграссом. Кремовый и ароматный.</li><li><strong>Массаман Карри</strong> - карри с картофелем и арахисом. Мягкий и насыщенный вкус.</li><li><strong>Спринг Роллы</strong> - свежие или жареные роллы с овощами. Легкая закуска.</li><li><strong>Кхао Пад</strong> - жареный рис с яйцом и мясом. Простое и сытное блюдо.</li><li><strong>Тайский Барбекю</strong> - мясо на гриле с острыми соусами. Для любителей мяса.</li></ol><p>Каждое блюдо тайской кухни - это настоящее произведение искусства. Не бойтесь экспериментировать и пробовать новые вкусы!</p>',
+                buttonClass: 'btn-warning'
+            },
+            {
+                id: 4,
+                title: 'Как фотографировать в путешествиях',
+                image: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=600&h=400&fit=crop',
+                badge: 'Фотография',
+                badgeClass: 'bg-info',
+                date: '8 января 2024',
+                shortText: 'Простые советы для создания красивых фотографий во время ваших путешествий.',
+                fullText: '<p>Фотография - отличный способ сохранить воспоминания о путешествии. Вот советы для создания потрясающих снимков:</p><h6>1. Правильное освещение</h6><p>Используйте естественное освещение. Золотые часы (рассвет и закат) дают самый красивый свет для фотографий.</p><h6>2. Композиция</h6><p>Применяйте правило третей. Разделите кадр на три части по горизонтали и вертикали, размещая главный объект на пересечении линий.</p><h6>3. Перспектива</h6><p>Экспериментируйте с углами съемки. Попробуйте снимать с высоты или с нижней точки для интересных ракурсов.</p><h6>4. Детали</h6><p>Не забывайте фотографировать детали: местную еду, архитектуру, текстуры. Это создает атмосферу места.</p><h6>5. Люди</h6><p>Включайте людей в кадр. Они добавляют жизни и масштаба фотографии.</p><h6>6. Резервное копирование</h6><p>Регулярно копируйте фотографии на несколько устройств, чтобы не потерять ценные кадры.</p><h6>7. Обработка</h6><p>Используйте приложения для редактирования фотографий, но не переусердствуйте. Естественность всегда лучше.</p><p>Помните: лучшая камера - та, которая у вас с собой. Не важно, снимаете ли вы на телефон или профессиональную камеру, главное - это ваше видение и эмоции, которые вы вкладываете в каждый кадр.</p>',
+                buttonClass: 'btn-info'
+            },
+            {
+                id: 5,
+                title: 'Как путешествовать с ограниченным бюджетом',
+                image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop',
+                badge: 'Бюджет',
+                badgeClass: 'bg-danger',
+                date: '5 января 2024',
+                shortText: 'Практические советы по экономии денег во время путешествий без потери комфорта.',
+                fullText: '<p>Путешествия не должны быть дорогими! Вот как можно сэкономить, не жертвуя комфортом:</p><h6>1. Бронирование заранее</h6><p>Бронируйте билеты и отели за несколько месяцев до поездки. Раннее бронирование часто дает скидки до 30%.</p><h6>2. Гибкие даты</h6><p>Если возможно, выбирайте гибкие даты поездки. Билеты в будние дни обычно дешевле, чем в выходные.</p><h6>3. Альтернативное жилье</h6><p>Рассмотрите хостелы, Airbnb или кемпинги вместо дорогих отелей. Это может сэкономить значительную сумму.</p><h6>4. Местная еда</h6><p>Ешьте там, где едят местные жители. Уличная еда и местные кафе часто дешевле и аутентичнее.</p><h6>5. Общественный транспорт</h6><p>Используйте общественный транспорт вместо такси. Это дешевле и дает больше возможностей познакомиться с местной жизнью.</p><h6>6. Бесплатные развлечения</h6><p>Ищите бесплатные мероприятия: прогулки по паркам, бесплатные музеи, местные фестивали.</p><h6>7. Групповые скидки</h6><p>Путешествуйте с друзьями или семьей. Многие туры и экскурсии предлагают групповые скидки.</p><h6>8. Кэшбэк и скидки</h6><p>Используйте карты с кэшбэком и ищите промокоды перед покупкой билетов или бронированием отелей.</p><p>Путешествия с ограниченным бюджетом могут быть даже более интересными, так как заставляют искать нестандартные решения и глубже погружаться в местную культуру!</p>',
+                buttonClass: 'btn-danger'
+            },
+            {
+                id: 6,
+                title: 'Недельный маршрут по Парижу',
+                image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&h=400&fit=crop',
+                badge: 'Маршруты',
+                badgeClass: 'bg-secondary',
+                date: '3 января 2024',
+                shortText: 'Подробный план поездки по столице Франции с посещением всех главных достопримечательностей.',
+                fullText: '<p>Париж - город мечты! Вот идеальный недельный маршрут для первого визита:</p><h6>День 1: Прибытие и Эйфелева башня</h6><p>Прибытие в Париж, размещение в отеле. Вечерняя прогулка к Эйфелевой башне и ужин в одном из кафе на Монмартре.</p><h6>День 2: Лувр и Сена</h6><p>Утро: посещение Лувра (забронируйте билеты заранее!). День: прогулка по набережной Сены. Вечер: круиз по Сене.</p><h6>День 3: Нотр-Дам и Латинский квартал</h6><p>Посещение собора Нотр-Дам (восстанавливается после пожара), прогулка по Латинскому кварталу, обед в местном бистро.</p><h6>День 4: Версаль</h6><p>Поездка в Версаль (30 минут на поезде). Экскурсия по дворцу и садам. Возвращение в Париж вечером.</p><h6>День 5: Монмартр и Сакре-Кёр</h6><p>Подъем на холм Монмартр, посещение базилики Сакре-Кёр, прогулка по площади Тертр, где работают уличные художники.</p><h6>День 6: Шанз-Элизе и Триумфальная арка</h6><p>Прогулка по Елисейским полям, посещение Триумфальной арки, шоппинг, вечерний ужин в одном из ресторанов.</p><h6>День 7: Музей Орсе и отъезд</h6><p>Посещение музея Орсе с коллекцией импрессионистов. Обед и последние покупки сувениров. Отъезд.</p><p>Этот маршрут позволит вам увидеть основные достопримечательности Парижа и почувствовать атмосферу этого удивительного города!</p>',
+                buttonClass: 'btn-secondary'
+            },
+            {
+                id: 7,
+                title: 'Лучшие места для отдыха в Казахстане',
+                image: 'https://tengrinews.kz/userdata/images/u269/resized/ba5fe38f77affb27072d279027cb7c79.jpg',
+                badge: 'Направления',
+                badgeClass: 'bg-success',
+                date: '1 января 2024',
+                shortText: 'Откройте для себя красоту Казахстана: от горных вершин до Каспийского моря.',
+                fullText: '<p>Казахстан - страна контрастов, где можно найти и горные пейзажи, и морские курорты. Вот лучшие места для отдыха:</p><h6>1. Талгар - горнолыжный курорт</h6><p>Расположен в предгорьях Заилийского Алатау. Современные трассы, прекрасные виды и отличная инфраструктура для зимнего отдыха.</p><h6>2. Актау - Каспийское море</h6><p>Единственный морской курорт Казахстана. Комфортные пляжи, морские прогулки и уникальная природа побережья.</p><h6>3. Боровое - озерный край</h6><p>Жемчужина Казахстана с чистыми озерами, хвойными лесами и целебным воздухом. Идеально для оздоровления.</p><h6>4. Алматы - южная столица</h6><p>Крупнейший город с богатой историей, музеями, парками и отличной кухней. Отсюда удобно начать путешествие по стране.</p><h6>5. Астана - современная столица</h6><p>Удивительный город с футуристической архитектурой. Байтерек, Хан Шатыр и другие уникальные сооружения.</p><p>Казахстан предлагает разнообразный отдых для любого путешественника - от активного туризма до спокойного пляжного отдыха!</p>',
+                buttonClass: 'btn-success'
+            },
+            {
+                id: 8,
+                title: 'Как выбрать правильный чемодан',
+                image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop',
+                badge: 'Советы',
+                badgeClass: 'bg-primary',
+                date: '28 декабря 2023',
+                shortText: 'Руководство по выбору идеального чемодана для ваших путешествий.',
+                fullText: '<p>Правильный чемодан может сделать ваше путешествие намного удобнее. Вот что нужно учитывать при выборе:</p><h6>1. Размер</h6><p>Выбирайте размер в зависимости от длительности поездки. Для коротких поездок подойдет ручная кладь, для длительных - средний или большой чемодан.</p><h6>2. Материал</h6><p>Поликарбонат легкий и прочный. Алюминий тяжелее, но очень долговечный. Ткань легкая, но менее защищенная.</p><h6>3. Колеса</h6><p>Четыре колеса (spinner) более маневренные, чем два колеса. Выбирайте качественные колеса, которые не сломаются в первый же день.</p><h6>4. Ручка</h6><p>Телескопическая ручка должна быть прочной и удобной. Проверьте, как она фиксируется на разных высотах.</p><h6>5. Замки</h6><p>TSA замки позволяют таможне проверять чемодан без повреждения. Это важно для международных поездок.</p><h6>6. Внутренняя организация</h6><p>Отделения и карманы помогают лучше организовать вещи. Регулируемые разделители - большой плюс.</p><h6>7. Вес</h6><p>Легкий чемодан дает больше места для вещей в рамках ограничений авиакомпаний.</p><p>Правильный выбор чемодана - это инвестиция в комфорт ваших путешествий. Не экономьте на качестве!</p>',
+                buttonClass: 'btn-primary'
+            },
+            {
+                id: 9,
+                title: 'Экотуризм: путешествуйте ответственно',
+                image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop',
+                badge: 'Экология',
+                badgeClass: 'bg-success',
+                date: '25 декабря 2023',
+                shortText: 'Как путешествовать, не нанося вреда окружающей среде и местным сообществам.',
+                fullText: '<p>Экотуризм становится все более популярным. Вот как путешествовать ответственно:</p><h6>1. Выбирайте экологичные направления</h6><p>Отдавайте предпочтение местам, которые заботятся об окружающей среде и поддерживают местные сообщества.</p><h6>2. Сокращайте углеродный след</h6><p>Используйте общественный транспорт, велосипеды или ходите пешком вместо аренды автомобиля. Компенсируйте выбросы CO2 от перелетов.</p><h6>3. Поддерживайте местную экономику</h6><p>Покупайте у местных производителей, ешьте в местных ресторанах, выбирайте местных гидов и отели, принадлежащие местным жителям.</p><h6>4. Уважайте природу</h6><p>Не оставляйте мусор, не трогайте животных и растения, оставайтесь на тропах, не используйте одноразовый пластик.</p><h6>5. Экономьте ресурсы</h6><p>Используйте воду экономно, выключайте свет и кондиционер, когда выходите из номера, используйте свои полотенца несколько раз.</p><h6>6. Изучайте местную культуру</h6><p>Узнавайте о местных обычаях и традициях перед поездкой. Уважайте местную культуру и одевайтесь соответственно.</p><h6>7. Выбирайте экологичные отели</h6><p>Останавливайтесь в отелях с экологическими сертификатами, которые используют возобновляемую энергию и перерабатывают отходы.</p><p>Ответственный туризм помогает сохранить красоту нашей планеты для будущих поколений. Каждое маленькое действие имеет значение!</p>',
+                buttonClass: 'btn-success'
+            }
+        ];
+
+        let currentPage = 1;
+        const postsPerPage = 3;
+
+        // Render blog posts
+        function renderBlogPosts(page) {
+            const container = document.getElementById('blogContainer');
+            const startIndex = (page - 1) * postsPerPage;
+            const endIndex = startIndex + postsPerPage;
+            const postsToShow = blogPosts.slice(startIndex, endIndex);
+
+            container.innerHTML = postsToShow.map(post => `
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="${post.image}" class="card-img-top" alt="${post.title}" style="height: 200px; object-fit: cover; width: 100%;">
+                        <div class="card-body">
+                            <span class="badge ${post.badgeClass} mb-2">${post.badge}</span>
+                            <h5 class="card-title fw-bold">${post.title}</h5>
+                            <p class="text-muted small mb-2">${post.date}</p>
+                            <p class="card-text">${post.shortText}</p>
+                            <button type="button" class="btn ${post.buttonClass}" data-bs-toggle="modal" data-bs-target="#blogPostModal" onclick="showBlogPost(${post.id})">Читать далее</button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Show blog post in modal
+        function showBlogPost(postId) {
+            const post = blogPosts.find(p => p.id === postId);
+            if (!post) return;
+
+            document.getElementById('blogPostModalLabel').textContent = post.title;
+            document.getElementById('blogPostBadge').textContent = post.badge;
+            document.getElementById('blogPostBadge').className = `badge ${post.badgeClass} mb-2`;
+            document.getElementById('blogPostDate').textContent = post.date;
+            document.getElementById('blogPostImage').src = post.image;
+            document.getElementById('blogPostImage').alt = post.title;
+            document.getElementById('blogPostContent').innerHTML = post.fullText;
+        }
+
+        // Render pagination
+        function renderPagination() {
+            const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+            const pagination = document.getElementById('blogPagination');
+            
+            let html = '';
+            
+            // Previous button
+            if (currentPage > 1) {
+                html += `<li class="page-item"><a class="page-link" href="#" onclick="changePage(${currentPage - 1}); return false;">Предыдущая</a></li>`;
+            } else {
+                html += `<li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Предыдущая</a></li>`;
+            }
+            
+            // Page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === currentPage) {
+                    html += `<li class="page-item active"><a class="page-link" href="#" onclick="changePage(${i}); return false;">${i}</a></li>`;
+                } else {
+                    html += `<li class="page-item"><a class="page-link" href="#" onclick="changePage(${i}); return false;">${i}</a></li>`;
+                }
+            }
+            
+            // Next button
+            if (currentPage < totalPages) {
+                html += `<li class="page-item"><a class="page-link" href="#" onclick="changePage(${currentPage + 1}); return false;">Следующая</a></li>`;
+            } else {
+                html += `<li class="page-item disabled"><a class="page-link" href="#">Следующая</a></li>`;
+            }
+            
+            pagination.innerHTML = html;
+        }
+
+        // Change page
+        function changePage(page) {
+            currentPage = page;
+            renderBlogPosts(currentPage);
+            renderPagination();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            renderBlogPosts(currentPage);
+            renderPagination();
+
+            // Newsletter subscription
+            const newsletterBtn = document.getElementById('newsletterBtn');
+            const newsletterEmail = document.getElementById('newsletterEmail');
+            const newsletterFeedback = document.getElementById('newsletterFeedback');
+            
+            if (newsletterBtn && newsletterEmail) {
+                newsletterBtn.addEventListener('click', function() {
+                    const email = newsletterEmail.value.trim();
+                    
+                    if (!email) {
+                        newsletterEmail.classList.add('is-invalid');
+                        newsletterFeedback.textContent = 'Пожалуйста, введите ваш email адрес';
+                        newsletterFeedback.classList.add('d-block');
+                        return;
+                    }
+                    
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(email)) {
+                        newsletterEmail.classList.add('is-invalid');
+                        newsletterFeedback.textContent = 'Пожалуйста, введите корректный email адрес';
+                        newsletterFeedback.classList.add('d-block');
+                        return;
+                    }
+                    
+                    newsletterEmail.classList.remove('is-invalid');
+                    newsletterFeedback.classList.remove('d-block');
+                    alert('Спасибо за подписку! Теперь вы будете получать наши новости и специальные предложения.');
+                    newsletterEmail.value = '';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

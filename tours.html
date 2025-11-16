@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Туры по всему миру: Мальдивы, Париж, Альпы, Казахстан и многие другие направления. Более 20 туров с лучшими ценами.">
+    <meta name="keywords" content="туры, путешествия, отдых, Казахстан, Талгар, Актау, Мальдивы, Париж, бронирование туров">
+    <title>Туры - ТурАгентство | Более 20 направлений</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="position-fixed top-0 start-0 w-100 h-100 "
+     style="background: rgba(255, 255, 255, 0.6); z-index: -9;">
+    </div>
+    <div class="position-fixed top-0 start-0 w-100 h-100 bg-cover " 
+     style="background-image: url(/images/Изображение\ WhatsApp\ 2025-11-16\ в\ 14.43.15_f544f142.jpg); background-position: center; z-index: -10;">
+</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-color: #3BB0D7;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-airplane"></i> ТурАгентство</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tours.html">Туры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Направления</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Блог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-primary text-white py-5 mt-5">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Наши туры</h1>
+                    <p class="lead mb-0">Выберите идеальное путешествие для вас из более чем 18 направлений</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="bi bi-airplane display-1 text-white opacity-75"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <select class="form-select" id="filterRegion">
+                        <option value="all">Все направления</option>
+                        <option value="europe">Европа</option>
+                        <option value="asia">Азия</option>
+                        <option value="america">Америка</option>
+                        <option value="middle-east">Ближний Восток</option>
+                        <option value="kazakhstan">Казахстан</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="filterType">
+                        <option value="all">Тип тура</option>
+                        <option value="beach">Пляжный отдых</option>
+                        <option value="excursion">Экскурсионный</option>
+                        <option value="ski">Горнолыжный</option>
+                        <option value="extreme">Экстремальный</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <input type="date" class="form-control" id="filterDate" placeholder="Дата вылета">
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="filterPrice">
+                        <option value="all">Цена</option>
+                        <option value="0-50000">До 300000 ₸</option>
+                        <option value="50000-100000">300000 - 600000 ₸</option>
+                        <option value="100000-200000">600000 - 1200000 ₸</option>
+                        <option value="200000+">От 1200000 ₸</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Grid -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Page 1 -->
+            <div class="tour-page" id="tourPage1">
+                <div class="row g-4" id="toursContainer">
+                <div class="col-md-6 col-lg-4 tour-card" data-region="asia" data-type="beach" data-price="150000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&h=400&fit=crop" class="card-img-top" alt="Мальдивы" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Хит продаж</span>
+                            <h5 class="card-title fw-bold">Мальдивы, райские острова</h5>
+                            <p class="text-muted small mb-2">7 дней / 6 ночей</p>
+                            <p class="card-text">Отдых на роскошном курорте с виллой на воде. Включено: завтраки, трансфер, экскурсии.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-primary btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="maldives">Подробнее</button>
+                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Мальдивы, райские острова" data-price="150000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-primary mb-0">900 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="europe" data-type="ski" data-price="120000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" class="card-img-top" alt="Альпы" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Новинка</span>
+                            <h5 class="card-title fw-bold">Швейцарские Альпы</h5>
+                            <p class="text-muted small mb-2">10 дней / 9 ночей</p>
+                            <p class="card-text">Горнолыжный отдых в Церматте. Подъемники, инструктор, аренда оборудования включены.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-success btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="alps">Подробнее</button>
+                                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Швейцарские Альпы" data-price="120000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-success mb-0">720 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="europe" data-type="excursion" data-price="80000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&h=400&fit=crop" class="card-img-top" alt="Париж" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Популярно</span>
+                            <h5 class="card-title fw-bold">Париж, романтика</h5>
+                            <p class="text-muted small mb-2">5 дней / 4 ночи</p>
+                            <p class="card-text">Экскурсионный тур по Парижу. Посещение Эйфелевой башни, Лувра, Версаля.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-warning btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="paris">Подробнее</button>
+                                <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Париж, романтика" data-price="80000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-warning mb-0">480 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="asia" data-type="excursion" data-price="140000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&h=400&fit=crop" class="card-img-top" alt="Япония" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Скидка 15%</span>
+                            <h5 class="card-title fw-bold">Япония, Токио</h5>
+                            <p class="text-muted small mb-2">8 дней / 7 ночей</p>
+                            <p class="card-text">Погружение в японскую культуру. Храмы, сады, суши-классы, горячие источники.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-danger btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="japan">Подробнее</button>
+                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Япония, Токио" data-price="140000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-danger mb-0">840 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="asia" data-type="beach" data-price="90000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600&h=400&fit=crop" class="card-img-top" alt="Тайланд" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Рекомендуем</span>
+                            <h5 class="card-title fw-bold">Тайланд, Пхукет</h5>
+                            <p class="text-muted small mb-2">10 дней / 9 ночей</p>
+                            <p class="card-text">Пляжный отдых на тропическом острове. Экскурсии, дайвинг, тайский массаж.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-info btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="thailand">Подробнее</button>
+                                <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Тайланд, Пхукет" data-price="90000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-info mb-0">540 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="middle-east" data-type="excursion" data-price="110000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=400&fit=crop" class="card-img-top" alt="Дубай" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-2">Эксклюзив</span>
+                            <h5 class="card-title fw-bold">ОАЭ, Дубай</h5>
+                            <p class="text-muted small mb-2">7 дней / 6 ночей</p>
+                            <p class="card-text">Роскошный отдых в Дубае. Бурдж-Халифа, пустыня, шоппинг, спа-процедуры.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="dubai">Подробнее</button>
+                                <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="ОАЭ, Дубай" data-price="110000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-secondary mb-0">660 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Page 2 -->
+            <div class="tour-page d-none" id="tourPage2">
+                <div class="row g-4">
+                <!-- Additional Tours -->
+                <div class="col-md-6 col-lg-4 tour-card" data-region="europe" data-type="excursion" data-price="75000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=600&h=400&fit=crop" class="card-img-top" alt="Италия" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Популярно</span>
+                            <h5 class="card-title fw-bold">Италия, Рим</h5>
+                            <p class="text-muted small mb-2">6 дней / 5 ночей</p>
+                            <p class="card-text">Классический тур по Вечному городу. Колизей, Ватикан, Треви, итальянская кухня.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-primary btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="rome">Подробнее</button>
+                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Италия, Рим" data-price="75000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-primary mb-0">450 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="europe" data-type="beach" data-price="85000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&h=400&fit=crop" class="card-img-top" alt="Испания" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Рекомендуем</span>
+                            <h5 class="card-title fw-bold">Испания, Барселона</h5>
+                            <p class="text-muted small mb-2">7 дней / 6 ночей</p>
+                            <p class="card-text">Пляжи, архитектура Гауди, каталонская кухня. Саграда Фамилия и парк Гуэль.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-success btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="barcelona">Подробнее</button>
+                                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Испания, Барселона" data-price="85000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-success mb-0">510 000 ₸    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="asia" data-type="beach" data-price="95000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop" class="card-img-top" alt="Бали" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Хит</span>
+                            <h5 class="card-title fw-bold">Индонезия, Бали</h5>
+                            <p class="text-muted small mb-2">10 дней / 9 ночей</p>
+                            <p class="card-text">Экзотический остров с тропическими пляжами, храмами и богатой культурой.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-warning btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="bali">Подробнее</button>
+                                <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Индонезия, Бали" data-price="95000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-warning mb-0">570 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="europe" data-type="ski" data-price="130000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Spitalskirche_zum_hl._Geist.jpg" class="card-img-top" alt="Австрия" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Новинка</span>
+                            <h5 class="card-title fw-bold">Австрия, Инсбрук</h5>
+                            <p class="text-muted small mb-2">8 дней / 7 ночей</p>
+                            <p class="card-text">Горнолыжный курорт в Альпах. Отличные трассы, австрийская кухня, спа-центры.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-info btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="austria">Подробнее</button>
+                                <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Австрия, Инсбрук" data-price="130000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-info mb-0">780 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="asia" data-type="excursion" data-price="125000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&h=400&fit=crop" class="card-img-top" alt="Сингапур" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Эксклюзив</span>
+                            <h5 class="card-title fw-bold">Сингапур</h5>
+                            <p class="text-muted small mb-2">5 дней / 4 ночи</p>
+                            <p class="card-text">Современный мегаполис Азии. Сады у залива, Marina Bay, этнические кварталы.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-danger btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="singapore">Подробнее</button>
+                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Сингапур" data-price="125000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-danger mb-0">750 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="europe" data-type="beach" data-price="70000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=600&h=400&fit=crop" class="card-img-top" alt="Греция" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Скидка</span>
+                            <h5 class="card-title fw-bold">Греция, Санторини</h5>
+                            <p class="text-muted small mb-2">7 дней / 6 ночей</p>
+                            <p class="card-text">Романтический остров с белоснежными домиками и закатами. Пляжи с черным песком.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-primary btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="santorini">Подробнее</button>
+                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Греция, Санторини" data-price="70000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-primary mb-0">420 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Page 3 -->
+            <div class="tour-page d-none" id="tourPage3">
+                <div class="row g-4">
+                <div class="col-md-6 col-lg-4 tour-card" data-region="middle-east" data-type="beach" data-price="105000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&h=400&fit=crop" class="card-img-top" alt="Турция" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Популярно</span>
+                            <h5 class="card-title fw-bold">Турция, Анталия</h5>
+                            <p class="text-muted small mb-2">10 дней / 9 ночей</p>
+                            <p class="card-text">Пляжный отдых на Средиземном море. Отели все включено, экскурсии, спа.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-success btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="turkey">Подробнее</button>
+                                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Турция, Анталия" data-price="105000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-success mb-0">630 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="america" data-type="excursion" data-price="180000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=600&h=400&fit=crop" class="card-img-top" alt="Нью-Йорк" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Премиум</span>
+                            <h5 class="card-title fw-bold">США, Нью-Йорк</h5>
+                            <p class="text-muted small mb-2">8 дней / 7 ночей</p>
+                            <p class="card-text">Город, который никогда не спит. Статуя Свободы, Таймс-сквер, Бродвей, музеи.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-warning btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="newyork">Подробнее</button>
+                                <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="США, Нью-Йорк" data-price="180000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-warning mb-0">1 080 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="asia" data-type="beach" data-price="88000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&h=400&fit=crop" class="card-img-top" alt="Вьетнам" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Выгодно</span>
+                            <h5 class="card-title fw-bold">Вьетнам, Нячанг</h5>
+                            <p class="text-muted small mb-2">9 дней / 8 ночей</p>
+                            <p class="card-text">Тропические пляжи, вьетнамская кухня, экскурсии, дайвинг, спа-процедуры.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-info btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="vietnam">Подробнее</button>
+                                <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Вьетнам, Нячанг" data-price="88000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-info mb-0">528 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="europe" data-type="excursion" data-price="92000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1549144511-f099e773c147?w=600&h=400&fit=crop" class="card-img-top" alt="Чехия" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Классика</span>
+                            <h5 class="card-title fw-bold">Чехия, Прага</h5>
+                            <p class="text-muted small mb-2">5 дней / 4 ночи</p>
+                            <p class="card-text">Средневековая столица. Карлов мост, Пражский град, чешское пиво, кухня.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-danger btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="prague">Подробнее</button>
+                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Чехия, Прага" data-price="92000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-danger mb-0">552 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="asia" data-type="excursion" data-price="135000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&h=400&fit=crop" class="card-img-top" alt="Китай" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-2">Экзотика</span>
+                            <h5 class="card-title fw-bold">Китай, Пекин</h5>
+                            <p class="text-muted small mb-2">7 дней / 6 ночей</p>
+                            <p class="card-text">Великая Китайская стена, Запретный город, Пекинская утка, традиционная культура.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="beijing">Подробнее</button>
+                                <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Китай, Пекин" data-price="135000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-secondary mb-0">810 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="europe" data-type="beach" data-price="78000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" class="card-img-top" alt="Хорватия" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Скрытая жемчужина</span>
+                            <h5 class="card-title fw-bold">Хорватия, Дубровник</h5>
+                            <p class="text-muted small mb-2">8 дней / 7 ночей</p>
+                            <p class="card-text">Средневековый город на Адриатике. Крепостные стены, пляжи, хорватская кухня.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-primary btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="dubrovnik">Подробнее</button>
+                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Хорватия, Дубровник" data-price="78000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-primary mb-0">468 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="kazakhstan" data-type="ski" data-price="45000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://powder.kz/wp-content/uploads/2018/06/talgar_peak-1-4.jpg" class="card-img-top" alt="Талгар" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Новинка</span>
+                            <h5 class="card-title fw-bold">Казахстан, Талгар</h5>
+                            <p class="text-muted small mb-2">5 дней / 4 ночи</p>
+                            <p class="card-text">Горнолыжный отдых в предгорьях Заилийского Алатау. Современные трассы, прекрасные виды, казахская кухня.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-success btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="talgur">Подробнее</button>
+                                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Казахстан, Талгар" data-price="45000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-success mb-0">270 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 tour-card" data-region="kazakhstan" data-type="beach" data-price="50000">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://img.pac.ru/resorts/213169/491163/big/097264E47F00010117A1C95CC05539FE.jpg" class="card-img-top" alt="Актау" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Рекомендуем</span>
+                            <h5 class="card-title fw-bold">Казахстан, Актау</h5>
+                            <p class="text-muted small mb-2">7 дней / 6 ночей</p>
+                            <p class="card-text">Отдых на берегу Каспийского моря. Пляжи, экскурсии, морские прогулки, казахская гостеприимность.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button type="button" class="btn btn-outline-info btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#tourDetailsModal" data-tour-id="aktau">Подробнее</button>
+                                <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-tour="Казахстан, Актау" data-price="50000">Забронировать</button>
+                            </div>
+                            <div class="mt-2">
+                                <span class="h5 text-info mb-0">300 000 ₸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination - Outside container to always be visible -->
+        <div class="container">
+            <div class="mt-5 pt-4 border-top">
+                <div class="text-center mb-4">
+                    <h5 class="fw-bold">Навигация по страницам</h5>
+                </div>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination pagination-lg justify-content-center mb-3" id="tourPagination">
+                        <li class="page-item" id="prevPageItem">
+                            <a class="page-link" href="#" id="tourPrevPage" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span> Предыдущая
+                            </a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link tour-page-number" href="#" data-page="1">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link tour-page-number" href="#" data-page="2">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link tour-page-number" href="#" data-page="3">3</a>
+                        </li>
+                        <li class="page-item" id="nextPageItem">
+                            <a class="page-link" href="#" id="tourNextPage" aria-label="Next">
+                                Следующая <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="text-center text-muted mb-0" id="pageInfo">
+                        <strong>Страница 1 из 3</strong> | Показано туров: 1-6 из 20
+                    </p>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Details Modal -->
+    <div class="modal fade" id="tourDetailsModal" tabindex="-1" aria-labelledby="tourDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tourDetailsModalLabel">Подробная информация о туре</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="tourDetailImage" src="" alt="" class="img-fluid rounded mb-3" style="max-height: 300px; object-fit: cover;">
+                    <h4 id="tourDetailTitle" class="fw-bold mb-3"></h4>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <p class="mb-2"><strong>Продолжительность:</strong> <span id="tourDetailDuration"></span></p>
+                            <p class="mb-2"><strong>Цена:</strong> <span id="tourDetailPrice" class="h5 text-primary"></span></p>
+                            <p class="mb-2"><strong>Регион:</strong> <span id="tourDetailRegion"></span></p>
+                            <p class="mb-2"><strong>Тип тура:</strong> <span id="tourDetailType"></span></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h5 class="fw-bold mb-3">Описание</h5>
+                    <p id="tourDetailDescription" class="mb-4"></p>
+                    <h5 class="fw-bold mb-3">Программа тура</h5>
+                    <ul id="tourDetailProgram" class="mb-4"></ul>
+                    <h5 class="fw-bold mb-3">Включено в стоимость</h5>
+                    <ul id="tourDetailIncluded" class="list-unstyled mb-4">
+                        <li class="mb-2">✓ <span id="tourIncluded1"></span></li>
+                        <li class="mb-2">✓ <span id="tourIncluded2"></span></li>
+                        <li class="mb-2">✓ <span id="tourIncluded3"></span></li>
+                        <li class="mb-2">✓ <span id="tourIncluded4"></span></li>
+                    </ul>
+                    <h5 class="fw-bold mb-3">Не включено</h5>
+                    <ul id="tourDetailExcluded" class="list-unstyled mb-4">
+                        <li class="mb-2">✗ <span id="tourExcluded1"></span></li>
+                        <li class="mb-2">✗ <span id="tourExcluded2"></span></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary" id="bookFromDetailsBtn">Забронировать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Бронирование тура</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="tourName" class="form-label">Тур</label>
+                            <input type="text" class="form-control" id="tourName" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tourPrice" class="form-label">Цена</label>
+                            <input type="text" class="form-control" id="tourPrice" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookingName" class="form-label">Ваше имя *</label>
+                            <input type="text" class="form-control" id="bookingName" required>
+                            <div class="invalid-feedback">
+                                Пожалуйста, введите ваше имя
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookingEmail" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="bookingEmail" required>
+                            <div class="invalid-feedback">
+                                Пожалуйста, введите корректный email адрес
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookingPhone" class="form-label">Телефон *</label>
+                            <input type="tel" class="form-control" id="bookingPhone" required>
+                            <div class="invalid-feedback">
+                                Пожалуйста, введите номер телефона
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookingDate" class="form-label">Дата вылета</label>
+                            <input type="date" class="form-control" id="bookingDate">
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookingPersons" class="form-label">Количество человек</label>
+                            <input type="number" class="form-control" id="bookingPersons" min="1" value="1">
+                            <div class="invalid-feedback">
+                                Количество человек должно быть не менее 1
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-primary" id="submitBookingBtn">Отправить заявку</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <a class="fw-bold mb-3 fw-bold" href="https://vt.tiktok.com/ZSyEQrEjh/"><i class="bi bi-airplane"></i> ТурАгентство</a>
+                    <p >Ваш надежный партнер в мире путешествий. Более 20 направлений по всему миру.</p>
+                    <div class="mt-3">
+                        <a href="https://www.tiktok.com/@csp.atb/video/7515898883994619167?is_from_webapp=1&sender_device=pc" class="text-white text-decoration-none me-3">Facebook</a>
+                        <a href="https://www.tiktok.com/@reza.editxz/video/7568436202098003218?is_from_webapp=1&sender_device=pc" class="text-white text-decoration-none me-3">Instagram</a>
+                        <a href="https://www.tiktok.com/@romaya_edit/video/7571822941294382354?is_from_webapp=1&sender_device=pc" class="text-white text-decoration-none">Twitter</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Быстрые ссылки</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Главная</a></li>
+                        <li class="mb-2"><a href="tours.html" class="text-white text-decoration-none">Все туры</a></li>
+                        <li class="mb-2"><a href="destinations.html" class="text-white text-decoration-none">Направления</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Контакты</h5>
+                    <p ><i class="bi bi-telephone-fill me-2"></i>+7 7477930944</p>
+                    <p ><i class="bi bi-envelope-fill me-2"></i>info@turagentstvo.ru</p>
+                    <p ><i class="bi bi-geo-alt-fill me-2"></i>г. Алматы Жубанова 7</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">&copy; 2024 ТурАгентство. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="contact.html" class="text-white text-decoration-none me-3">Контакты</a>
+                    <a href="about.html" class="text-white text-decoration-none">О нас</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle shadow-lg d-none" style="width: 50px; height: 50px; z-index: 1000;" aria-label="Наверх">
+        <i class="bi bi-arrow-up fs-4"></i>
+    </button>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Global pagination variables and function
+        let currentTourPage = 1;
+        const totalTourPages = 3;
+
+        // Make function globally accessible
+        window.showTourPage = function(page) {
+            const tourPages = document.querySelectorAll('.tour-page');
+            const tourPageNumbers = document.querySelectorAll('.tour-page-number');
+            const tourPrevBtn = document.getElementById('tourPrevPage');
+            const tourNextBtn = document.getElementById('tourNextPage');
+            const prevPageItem = document.getElementById('prevPageItem');
+            const nextPageItem = document.getElementById('nextPageItem');
+            const pageInfo = document.getElementById('pageInfo');
+            
+            if (!tourPages.length) {
+                return;
+            }
+            
+            // Validate page number
+            if (page < 1) page = 1;
+            if (page > totalTourPages) page = totalTourPages;
+            
+            // Hide all pages
+            tourPages.forEach((p) => {
+                p.classList.add('d-none');
+                p.classList.remove('d-block');
+            });
+            
+            // Show selected page
+            const selectedPage = tourPages[page - 1];
+            if (selectedPage) {
+                selectedPage.classList.remove('d-none');
+                selectedPage.classList.add('d-block');
+            }
+            
+            // Update page numbers
+            tourPageNumbers.forEach(p => {
+                const pageItem = p.parentElement;
+                pageItem.classList.remove('active');
+                if (parseInt(p.getAttribute('data-page')) === page) {
+                    pageItem.classList.add('active');
+                }
+            });
+            
+            // Update prev/next buttons
+            if (prevPageItem) {
+                if (page === 1) {
+                    prevPageItem.classList.add('disabled');
+                } else {
+                    prevPageItem.classList.remove('disabled');
+                }
+            }
+            
+            if (nextPageItem) {
+                if (page === totalTourPages) {
+                    nextPageItem.classList.add('disabled');
+                } else {
+                    nextPageItem.classList.remove('disabled');
+                }
+            }
+            
+            // Update page info
+            if (pageInfo) {
+                const toursPerPage = 6;
+                const startTour = (page - 1) * toursPerPage + 1;
+                const endTour = Math.min(page * toursPerPage, 20);
+                pageInfo.innerHTML = `<strong>Страница ${page} из ${totalTourPages}</strong> | Показано туров: ${startTour}-${endTour} из 20`;
+            }
+            
+            currentTourPage = page;
+        };
+
+        // Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initTourPagination);
+        } else {
+            initTourPagination();
+        }
+
+        function initTourPagination() {
+            // Wait a bit for DOM to be fully ready
+            setTimeout(function() {
+                // Initialize to show first page
+                if (document.querySelector('#tourPage1')) {
+                    document.querySelector('#tourPage1').classList.remove('d-none');
+                    document.querySelector('#tourPage1').classList.add('d-block');
+                }
+                window.showTourPage(1);
+                
+                // Setup event listeners
+                const tourPageNumbers = document.querySelectorAll('.tour-page-number');
+                const tourPrevBtn = document.getElementById('tourPrevPage');
+                const tourNextBtn = document.getElementById('tourNextPage');
+
+                // Page number clicks
+                tourPageNumbers.forEach(btn => {
+                    btn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const page = parseInt(this.getAttribute('data-page'));
+                        if (page && page >= 1 && page <= totalTourPages) {
+                            window.showTourPage(page);
+                        }
+                    });
+                });
+
+                // Previous button
+                if (tourPrevBtn) {
+                    tourPrevBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        if (currentTourPage > 1) {
+                            window.showTourPage(currentTourPage - 1);
+                        }
+                    });
+                }
+
+                // Next button
+                if (tourNextBtn) {
+                    tourNextBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        if (currentTourPage < totalTourPages) {
+                            window.showTourPage(currentTourPage + 1);
+                        }
+                    });
+                }
+            }, 200);
+        }
+        
+        // Tour Details Data
+        const tourDetails = {
+            'maldives': { title: 'Мальдивы, райские острова', image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&h=600&fit=crop', duration: '7 дней / 6 ночей', price: '150 000 ₽', region: 'Азия', type: 'Пляжный отдых', description: 'Роскошный отдых на Мальдивских островах. Белоснежные пляжи, кристально чистая вода, идеальные условия для дайвинга и сноркелинга.', program: ['День 1: Прибытие, трансфер на курорт', 'День 2-3: Свободное время, сноркелинг', 'День 4: Экскурсия на необитаемый остров', 'День 5: Рыбалка на закате', 'День 6: Спа-процедуры', 'День 7: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание в вилле на воде', 'Завтраки', 'Трансфер'], excluded: ['Обеды и ужины', 'Алкогольные напитки'] },
+            'alps': { title: 'Швейцарские Альпы', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop', duration: '10 дней / 9 ночей', price: '120 000 ₽', region: 'Европа', type: 'Горнолыжный', description: 'Горнолыжный отдых в Церматте. Отличные трассы, профессиональные инструкторы, традиционная швейцарская кухня.', program: ['День 1: Прибытие в Церматт', 'День 2-8: Горнолыжные катания', 'День 9: Экскурсия по городу', 'День 10: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Ски-пасс'], excluded: ['Обеды и ужины', 'Дополнительные развлечения'] },
+            'paris': { title: 'Париж, романтика', image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&h=600&fit=crop', duration: '5 дней / 4 ночи', price: '80 000 ₽', region: 'Европа', type: 'Экскурсионный', description: 'Романтическое путешествие в Париж. Посещение главных достопримечательностей, прогулки по Сене, французская кухня.', program: ['День 1: Прибытие, обзорная экскурсия', 'День 2: Эйфелева башня, Лувр', 'День 3: Версаль', 'День 4: Монмартр', 'День 5: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Экскурсии'], excluded: ['Обеды и ужины', 'Личные расходы'] },
+            'japan': { title: 'Япония, Токио', image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&h=600&fit=crop', duration: '8 дней / 7 ночей', price: '140 000 ₽', region: 'Азия', type: 'Экскурсионный', description: 'Погружение в японскую культуру. Храмы, сады, современные технологии, традиционные ремесла.', program: ['День 1: Прибытие в Токио', 'День 2: Императорский дворец', 'День 3: Храмы Асакуса', 'День 4: Класс суши', 'День 5: Камакура', 'День 6: Харадзюку', 'День 7: Горячие источники', 'День 8: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Экскурсии'], excluded: ['Обеды и ужины', 'Личные расходы'] },
+            'thailand': { title: 'Тайланд, Пхукет', image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&h=600&fit=crop', duration: '10 дней / 9 ночей', price: '90 000 ₽', region: 'Азия', type: 'Пляжный отдых', description: 'Тропический рай на острове Пхукет. Пляжи с белым песком, кристально чистая вода, экзотическая природа.', program: ['День 1: Прибытие, размещение', 'День 2-4: Отдых на пляже', 'День 5: Экскурсия на острова Пхи-Пхи', 'День 6: Дайвинг', 'День 7: Тайский массаж', 'День 8: Экскурсия в джунгли', 'День 9: Свободное время', 'День 10: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Экскурсии'], excluded: ['Обеды и ужины', 'Дополнительные экскурсии'] },
+            'dubai': { title: 'ОАЭ, Дубай', image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop', duration: '7 дней / 6 ночей', price: '110 000 ₽', region: 'Ближний Восток', type: 'Экскурсионный', description: 'Роскошь и современность в пустыне. Небоскребы, золотые базары, пустынные сафари.', program: ['День 1: Прибытие, размещение', 'День 2: Бурдж-Халифа', 'День 3: Сафари в пустыне', 'День 4: Пляж, аквапарк', 'День 5: Старый Дубай', 'День 6: Пальмовые острова', 'День 7: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Экскурсии'], excluded: ['Обеды и ужины', 'Личные расходы'] },
+            'rome': { title: 'Италия, Рим', image: 'https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800&h=600&fit=crop', duration: '6 дней / 5 ночей', price: '75 000 ₽', region: 'Европа', type: 'Экскурсионный', description: 'Классический тур по Вечному городу. Колизей, Ватикан, фонтаны, итальянская кухня.', program: ['День 1: Прибытие', 'День 2: Колизей, Римский форум', 'День 3: Ватикан', 'День 4: Фонтан Треви', 'День 5: Свободное время', 'День 6: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Экскурсии'], excluded: ['Обеды и ужины', 'Личные расходы'] },
+            'barcelona': { title: 'Испания, Барселона', image: 'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=800&h=600&fit=crop', duration: '7 дней / 6 ночей', price: '85 000 ₽', region: 'Европа', type: 'Пляжный отдых', description: 'Средиземноморский город с архитектурой Гауди, пляжами, каталонской кухней.', program: ['День 1: Прибытие', 'День 2: Саграда Фамилия', 'День 3: Готический квартал', 'День 4-5: Пляжи', 'День 6: Монтсеррат', 'День 7: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Экскурсии'], excluded: ['Обеды и ужины', 'Дополнительные экскурсии'] },
+            'bali': { title: 'Индонезия, Бали', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop', duration: '10 дней / 9 ночей', price: '95 000 ₽', region: 'Азия', type: 'Пляжный отдых', description: 'Экзотический остров с тропическими пляжами, древними храмами, рисовыми террасами.', program: ['День 1: Прибытие', 'День 2-4: Пляжи, серфинг', 'День 5: Храмы', 'День 6: Рисовые террасы', 'День 7: Спа, йога', 'День 8: Вулкан Батур', 'День 9: Свободное время', 'День 10: Трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Экскурсии'], excluded: ['Обеды и ужины', 'Дополнительные активности'] },
+            'austria': { title: 'Австрия, Инсбрук', image: 'https://upload.wikimedia.org/wikipedia/commons/7/7d/Spitalskirche_zum_hl._Geist.jpg', duration: '8 дней / 7 ночей', price: '130 000 ₽', region: 'Европа', type: 'Горнолыжный', description: 'Горнолыжный курорт в Альпах. Отличные трассы, австрийская кухня, спа-центры.', program: ['День 1: Прибытие', 'День 2-6: Горнолыжные катания', 'День 7: Экскурсия по Инсбруку', 'День 8: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Ски-пасс'], excluded: ['Обеды и ужины', 'Дополнительные услуги'] },
+            'singapore': { title: 'Сингапур', image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&h=600&fit=crop', duration: '5 дней / 4 ночи', price: '125 000 ₽', region: 'Азия', type: 'Экскурсионный', description: 'Современный мегаполис Азии. Футуристическая архитектура, этнические кварталы.', program: ['День 1: Прибытие', 'День 2: Сады у залива', 'День 3: Чайнатаун', 'День 4: Сентоза', 'День 5: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Экскурсии'], excluded: ['Обеды и ужины', 'Дополнительные развлечения'] },
+            'santorini': { title: 'Греция, Санторини', image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&h=600&fit=crop', duration: '7 дней / 6 ночей', price: '70 000 ₽', region: 'Европа', type: 'Пляжный отдых', description: 'Романтический остров с белоснежными домиками, знаменитыми закатами.', program: ['День 1: Прибытие', 'День 2-3: Пляжи', 'День 4: Экскурсия по острову', 'День 5: Закат в Ойе', 'День 6: Винодельни', 'День 7: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Экскурсии'], excluded: ['Обеды и ужины', 'Дополнительные услуги'] },
+            'turkey': { title: 'Турция, Анталия', image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop', duration: '10 дней / 9 ночей', price: '105 000 ₽', region: 'Ближний Восток', type: 'Пляжный отдых', description: 'Пляжный отдых на Средиземном море. Отели все включено, экскурсии, турецкие бани.', program: ['День 1: Прибытие', 'День 2-6: Отдых на пляже', 'День 7: Экскурсия в Памуккале', 'День 8: Старый город', 'День 9: Турецкая баня', 'День 10: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание все включено', 'Экскурсии'], excluded: ['Дополнительные экскурсии', 'Личные расходы'] },
+            'newyork': { title: 'США, Нью-Йорк', image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&h=600&fit=crop', duration: '8 дней / 7 ночей', price: '180 000 ₽', region: 'Америка', type: 'Экскурсионный', description: 'Город, который никогда не спит. Небоскребы, музеи, Бродвей.', program: ['День 1: Прибытие', 'День 2: Таймс-сквер', 'День 3: Статуя Свободы', 'День 4: Метрополитен-музей', 'День 5: Бруклин', 'День 6: Бродвей', 'День 7: Свободное время', 'День 8: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Экскурсии'], excluded: ['Обеды и ужины', 'Дополнительные развлечения'] },
+            'vietnam': { title: 'Вьетнам, Нячанг', image: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&h=600&fit=crop', duration: '9 дней / 8 ночей', price: '88 000 ₽', region: 'Азия', type: 'Пляжный отдых', description: 'Тропические пляжи, вьетнамская кухня, экскурсии, дайвинг и спа-процедуры.', program: ['День 1: Прибытие', 'День 2-4: Пляжи', 'День 5: Острова', 'День 6: Дайвинг', 'День 7: Спа, массаж', 'День 8: Экскурсия в горы', 'День 9: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Экскурсии'], excluded: ['Обеды и ужины', 'Дополнительные активности'] },
+            'prague': { title: 'Чехия, Прага', image: 'https://images.unsplash.com/photo-1549144511-f099e773c147?w=800&h=600&fit=crop', duration: '5 дней / 4 ночи', price: '92 000 ₽', region: 'Европа', type: 'Экскурсионный', description: 'Средневековая столица с готической архитектурой, чешским пивом.', program: ['День 1: Прибытие', 'День 2: Пражский град', 'День 3: Карлов мост', 'День 4: Дегустация пива', 'День 5: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Экскурсии'], excluded: ['Обеды и ужины', 'Личные расходы'] },
+            'beijing': { title: 'Китай, Пекин', image: 'https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=800&h=600&fit=crop', duration: '7 дней / 6 ночей', price: '135 000 ₽', region: 'Азия', type: 'Экскурсионный', description: 'Великая Китайская стена, Запретный город, Пекинская утка.', program: ['День 1: Прибытие', 'День 2: Великая Китайская стена', 'День 3: Запретный город', 'День 4: Летний дворец', 'День 5: Храмы', 'День 6: Пекинская утка', 'День 7: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Экскурсии'], excluded: ['Обеды и ужины', 'Дополнительные экскурсии'] },
+            'dubrovnik': { title: 'Хорватия, Дубровник', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop', duration: '8 дней / 7 ночей', price: '78 000 ₽', region: 'Европа', type: 'Пляжный отдых', description: 'Средневековый город на Адриатическом море. Крепостные стены, пляжи.', program: ['День 1: Прибытие', 'День 2-4: Пляжи', 'День 5: Крепостные стены', 'День 6: Остров Локрум', 'День 7: Свободное время', 'День 8: Завтрак, трансфер'], included: ['Авиаперелет', 'Проживание', 'Завтраки', 'Экскурсии'], excluded: ['Обеды и ужины', 'Дополнительные услуги'] },
+            'talgur': { title: 'Казахстан, Талгар', image: 'https://powder.kz/wp-content/uploads/2018/06/talgar_peak-1-4.jpg', duration: '5 дней / 4 ночи', price: '45 000 ₽', region: 'Казахстан', type: 'Горнолыжный', description: 'Горнолыжный отдых в предгорьях Заилийского Алатау. Современные трассы мирового класса, прекрасные виды на заснеженные вершины, казахская гостеприимность и национальная кухня. Идеальное место для любителей горных лыж и сноуборда.', program: ['День 1: Прибытие в Алматы, трансфер в Талгар, размещение', 'День 2-3: Горнолыжные катания, инструктаж для новичков, фрирайд для опытных', 'День 4: Экскурсия в ущелье, посещение термальных источников, дегустация казахской кухни', 'День 5: Завтрак, свободное время, трансфер в аэропорт'], included: ['Авиаперелет', 'Проживание в гостинице 3*', 'Завтраки', 'Ски-пасс на все трассы', 'Аренда горнолыжного оборудования', 'Трансфер аэропорт-отель-аэропорт', 'Экскурсия в ущелье'], excluded: ['Обеды и ужины', 'Дополнительные услуги', 'Инструктор (опционально, 2000 ₽/день)', 'Страховка'] },
+            'aktau': { title: 'Казахстан, Актау', image: 'https://img.pac.ru/resorts/213169/491163/big/097264E47F00010117A1C95CC05539FE.jpg', duration: '7 дней / 6 ночей', price: '50 000 ₽', region: 'Казахстан', type: 'Пляжный отдых', description: 'Отдых на берегу Каспийского моря в самом западном городе Казахстана. Комфортные пляжи с золотым песком, морские прогулки, экскурсии по современному городу, казахская кухня и традиционное гостеприимство. Уникальная возможность отдохнуть на Каспии.', program: ['День 1: Прибытие в Актау, трансфер, размещение в отеле на берегу моря', 'День 2-4: Отдых на пляже, морские прогулки, водные виды спорта', 'День 5: Экскурсия по городу, посещение набережной, музей', 'День 6: Поездка к урочищу Тамшалы, пикник на природе, фотографии', 'День 7: Завтрак, свободное время, шоппинг сувениров, трансфер в аэропорт'], included: ['Авиаперелет', 'Проживание в отеле 3* на первой линии', 'Завтраки', 'Обзорная экскурсия по Актау', 'Экскурсия к урочищу Тамшалы', 'Трансфер аэропорт-отель-аэропорт', 'Морская прогулка на катере'], excluded: ['Обеды и ужины', 'Дополнительные экскурсии', 'Водные виды спорта (опционально)', 'Личные расходы', 'Страховка'] }
+        };
+        
+        // Tour Details Modal initialization
+        const tourDetailsModal = document.getElementById('tourDetailsModal');
+        let currentTourId = null;
+        
+        if (tourDetailsModal) {
+            tourDetailsModal.addEventListener('show.bs.modal', function(event) {
+                const button = event.relatedTarget;
+                if (!button) return;
+                
+                currentTourId = button.getAttribute('data-tour-id');
+                const tour = tourDetails[currentTourId];
+                
+                if (!tour) {
+                    alert('Информация о туре не найдена');
+                    event.preventDefault();
+                    return;
+                }
+                
+                // Fill modal with tour data
+                document.getElementById('tourDetailImage').src = tour.image;
+                document.getElementById('tourDetailImage').alt = tour.title;
+                document.getElementById('tourDetailTitle').textContent = tour.title;
+                document.getElementById('tourDetailDuration').textContent = tour.duration;
+                document.getElementById('tourDetailPrice').textContent = tour.price;
+                document.getElementById('tourDetailRegion').textContent = tour.region;
+                document.getElementById('tourDetailType').textContent = tour.type;
+                document.getElementById('tourDetailDescription').textContent = tour.description;
+                
+                // Fill program
+                const programList = document.getElementById('tourDetailProgram');
+                programList.innerHTML = '';
+                tour.program.forEach(item => {
+                    const li = document.createElement('li');
+                    li.className = 'mb-2';
+                    li.textContent = item;
+                    programList.appendChild(li);
+                });
+                
+                // Fill included
+                const includedIds = ['tourIncluded1', 'tourIncluded2', 'tourIncluded3', 'tourIncluded4'];
+                tour.included.forEach((item, index) => {
+                    if (includedIds[index]) {
+                        document.getElementById(includedIds[index]).textContent = item;
+                    }
+                });
+                
+                // Fill excluded
+                const excludedIds = ['tourExcluded1', 'tourExcluded2'];
+                tour.excluded.forEach((item, index) => {
+                    if (excludedIds[index]) {
+                        document.getElementById(excludedIds[index]).textContent = item;
+                    }
+                });
+            });
+            
+            // Book from details button
+            const bookFromDetailsBtn = document.getElementById('bookFromDetailsBtn');
+            if (bookFromDetailsBtn) {
+                bookFromDetailsBtn.addEventListener('click', function() {
+                    if (!currentTourId) return;
+                    
+                    const tour = tourDetails[currentTourId];
+                    if (!tour) return;
+                    
+                    const tourDetailsModalInstance = bootstrap.Modal.getInstance(tourDetailsModal);
+                    if (tourDetailsModalInstance) {
+                        tourDetailsModalInstance.hide();
+                    }
+                    
+                    setTimeout(() => {
+                        const bookingModal = document.getElementById('bookingModal');
+                        if (bookingModal) {
+                            const bookingModalInstance = new bootstrap.Modal(bookingModal);
+                            document.getElementById('tourName').value = tour.title;
+                            document.getElementById('tourPrice').value = tour.price;
+                            bookingModalInstance.show();
+                        }
+                    }, 300);
+                });
+            }
+        }
+        
+        // Booking Modal initialization
+        const bookingModal = document.getElementById('bookingModal');
+        if (bookingModal) {
+            bookingModal.addEventListener('show.bs.modal', function(event) {
+                const button = event.relatedTarget;
+                if (button) {
+                    const tour = button.getAttribute('data-tour');
+                    const price = button.getAttribute('data-price');
+                    
+                    if (tour) document.getElementById('tourName').value = tour;
+                    if (price) document.getElementById('tourPrice').value = price + ' ₽';
+                }
+            });
+        }
+        
+        // Booking form submission with Bootstrap validation
+        const bookingForm = document.getElementById('bookingForm');
+        const submitBookingBtn = document.getElementById('submitBookingBtn');
+        
+        if (submitBookingBtn && bookingForm) {
+            submitBookingBtn.addEventListener('click', function() {
+                if (!bookingForm.checkValidity()) {
+                    bookingForm.classList.add('was-validated');
+                    return;
+                }
+                
+                const name = document.getElementById('bookingName').value.trim();
+                const email = document.getElementById('bookingEmail').value.trim();
+                const phone = document.getElementById('bookingPhone').value.trim();
+                
+                if (!name || !email || !phone) {
+                    bookingForm.classList.add('was-validated');
+                    return;
+                }
+                
+                // Close modal and show success message
+                const modalElement = document.getElementById('bookingModal');
+                if (modalElement) {
+                    const modal = bootstrap.Modal.getInstance(modalElement);
+                    if (modal) {
+                        modal.hide();
+                    }
+                }
+                alert('Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.');
+                bookingForm.reset();
+                bookingForm.classList.remove('was-validated');
+            });
+        }
+        
+        // Tour filters functionality
+        const filterRegion = document.getElementById('filterRegion');
+        const filterType = document.getElementById('filterType');
+        const filterPrice = document.getElementById('filterPrice');
+        
+        function applyTourFilters() {
+            const region = filterRegion ? filterRegion.value : 'all';
+            const type = filterType ? filterType.value : 'all';
+            const price = filterPrice ? filterPrice.value : 'all';
+            
+            const tourCards = document.querySelectorAll('.tour-card');
+            let visibleCount = 0;
+            
+            tourCards.forEach(card => {
+                let show = true;
+                
+                if (region !== 'all' && card.dataset.region !== region) {
+                    show = false;
+                }
+                
+                if (type !== 'all' && card.dataset.type !== type) {
+                    show = false;
+                }
+                
+                if (price !== 'all') {
+                    const cardPrice = parseInt(card.dataset.price);
+                    if (price === '0-50000' && cardPrice >= 50000) {
+                        show = false;
+                    } else if (price === '50000-100000' && (cardPrice < 50000 || cardPrice >= 100000)) {
+                        show = false;
+                    } else if (price === '100000-200000' && (cardPrice < 100000 || cardPrice >= 200000)) {
+                        show = false;
+                    } else if (price === '200000+' && cardPrice < 200000) {
+                        show = false;
+                    }
+                }
+                
+                if (show) {
+                    card.classList.remove('d-none');
+                    visibleCount++;
+                } else {
+                    card.classList.add('d-none');
+                }
+            });
+            
+            if (visibleCount === 0) {
+                alert('Туры не найдены. Попробуйте изменить фильтры.');
+            }
+            
+            if (typeof window.showTourPage === 'function') {
+                window.showTourPage(1);
+            }
+        }
+        
+        if (filterRegion) filterRegion.addEventListener('change', applyTourFilters);
+        if (filterType) filterType.addEventListener('change', applyTourFilters);
+        if (filterPrice) filterPrice.addEventListener('change', applyTourFilters);
+        
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        if (scrollToTopBtn) {
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    scrollToTopBtn.classList.remove('d-none');
+                } else {
+                    scrollToTopBtn.classList.add('d-none');
+                }
+            });
+            
+            scrollToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    </script>
+</body>
+</html>
+
